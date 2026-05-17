@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="sidebar">
+
+    <h2>Peblo</h2>
+
+    <a href="index.html">🏠 Home</a>
+    <a href="dashboard.html">📝 Dashboard</a>
+    <a href="ai-tools.html">🤖 AI Tools</a>
+    <a href="profile.html">👤 Profile</a>
+    <a href="contact.html">📞 Contact</a>
+    <a href="login.html">🚪 Logout</a>
+
+</div>
+
+<div class="main-content">
+	<div class="hero-banner">
+		<div class="stats-container">
+
+		    <div class="stat-card">
+		        <h2 id="totalNotes">
+		            0
+		        </h2>
+		        <p>Total Notes</p>
+		    </div>
+
+		    <div class="stat-card">
+		        <h2>
+		            AI
+		        </h2>
+		        <p>Smart Summary</p>
+		    </div>
+
+		    <div class="stat-card">
+		        <h2>
+		            24/7
+		        </h2>
+		        <p>Available</p>
+		    </div>
+
+		</div>
+
+		<input type="text"
+		id="searchInput"
+		placeholder="🔍 Search Notes..."
+		onkeyup="searchNotes()">
+
+	    <div>
+
+	        <h1>
+	            🚀 Welcome to Peblo AI
+	        </h1>
+
+	        <p>
+	            Create, organize and
+	            summarize smart notes
+	            using AI.
+	        </p>
+
+	    </div>
+
+	</div>
+
+    <h1>🚀 Dashboard</h1>
+
+    <div class="dashboard-card">
+
+        <input type="text"
+        id="title"
+        placeholder="Note Title">
+
+        <textarea id="content"
+        rows="5"
+        placeholder="Write your note">
+        </textarea>
+
+        <input type="text"
+        id="tags"
+        placeholder="Tags">
+
+        <input type="text"
+        id="category"
+        placeholder="Category">
+
+        <button onclick="createNote()">
+            Create Note
+        </button>
+
+    </div>
+
+    <h2>Your Notes</h2>
+
+    <div id="notesContainer">
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
